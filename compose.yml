@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:latest
+    user: mysql
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: senha123
+      MYSQL_DATABASE: appPcp
+    ports:
+      - "3306:3306"
